@@ -10,6 +10,7 @@
    suited for hashing nearly identical strings such as URLs,
    hostnames, filenames, text, IP addresses, etc.
 
+[![Build Status](https://travis-ci.org/samoconnor/FNVHash.jl.svg)](https://travis-ci.org/samoconnor/FNVHash.jl)
 
 ## Example
 
