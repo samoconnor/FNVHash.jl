@@ -1,3 +1,6 @@
+__precompile__()
+
+
 module FNVHash
 
 export fnv32, fnv16
