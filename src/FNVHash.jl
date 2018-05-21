@@ -24,7 +24,7 @@ end
 fnv32(s) = fnv32(Vector{UInt8}(s))
 
 
-fnv16(hash::UInt32) = UInt16(hash >>> 16) $ UInt16(hash) & 0xFFFF
+fnv16(hash::UInt32) = UInt16(hash >>> 16) $ UInt16(hash & 0xFFFF)
 fnv16(data) = fnv16(fnv32(data))
 
 
