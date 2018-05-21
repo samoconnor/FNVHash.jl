@@ -5,8 +5,6 @@ using Base.Test
 @test fnv32([0xcc,0x24,0x31,0xc4]) == 0
 @test fnv32([0xe0, 0x4d, 0x9f, 0xcb]) == 0
 
-# Taken from http://www.isthe.com/chongo/src/fnv/test_fnv.c fnv1a_32_test_vector
-
 TEST(s) = s
 
 function TEST0(s)
@@ -207,6 +205,8 @@ input = Any[
   TEST(R500("~")),
   TEST(R500(b"\x7f"))
 ]
+
+# Taken from http://www.isthe.com/chongo/src/fnv/test_fnv.c fnv1_32_test_vector
 
 results = [
     0x811c9dc5,
@@ -413,6 +413,8 @@ results = [
     0x83c5c6d5,
     0x813b0881
 ]
+
+# Taken from http://www.isthe.com/chongo/src/fnv/test_fnv.c fnv1a_32_test_vector
 
 results1a = [
    0x811c9dc5,
